@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<h2>Category: <a href={{ url_for("showItems", category=category.category) }}>{{ category.category }}</a> </h2>
+
+<div class="item_detail">
+	<span class="label">Item Name:</span> {{ item.item }}
+</div>
+
+<div class="item_detail">
+	<span class="label">Description:</span> {{ item.description }}
+</div>
+
+{% if  item.user_id == login_id %}
+	<a href='{{ url_for('deleteItem', category=category.category, item=item.item) }}'><button>Delete Item</button></a>
+	<a href='{{ url_for('updateItem', category=category.category, item=item.item) }}'><button>Edit Item</button></a>
+{% endif %}
+
+
+{% endblock %}

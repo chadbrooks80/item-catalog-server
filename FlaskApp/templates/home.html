@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<a href='{{ url_for('createCategory') }}'> <button>Create New Category</button></a>
+
+
+	<h2>Pick a Category</h2>
+{%for category in categories%}
+
+	<div class="list">
+		<a href='{{ url_for('showItems', category=category.category ) }}'>
+		{{category.category}}</a>
+	</div>
+
+{%endfor%}
+
+
+{% endblock %}

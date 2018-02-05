@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	<h2>Edit {{ item.item }}</h2>
+
+	<form action='{{ url_for('updateItem', category=category, item=item.item) }}' method='POST'>
+		<div class="form_input">
+			<input type="text" name="item" value='{{ item.item }}'>
+		</div>
+		<div class="form_input">
+			<input type="text" name="description" value='{{ item.description }}'>
+		</div>
+		<input type="submit" value="Update Item" class="submit_form">
+
+	</form>
+
+{% endblock %}

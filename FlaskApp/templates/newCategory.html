@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	<h2>Add a New Category</h2>
+
+	<form action='{{ url_for('createCategory') }}' method='POST'>
+		<div class="form_input">
+			<input type='text' name='category' placeholder="Enter New Category">
+		</div>
+		<input type='submit' value="Create New Category" class="submit_form">
+		
+	</form>
+
+{% endblock %}
