@@ -14,9 +14,18 @@ The Item Catalog Databse is set up with Postgresql, utilizing the SQLAlchemy lib
 
 The server is placed securely on a LightSale AWS server running Ubuntu 16.04. LightSale has it's own firewall, with an additional firewall installed on linux called ufw. All ports have been disabled on both firewalls, with the exception of any ports needed.  
 
-The SSH default port 22 has also been disabled and it uses an undisclosed port for additional security. 
+The SSH default port 22 has also been disabled, now only allowing port 2200. 
 
 Additionally, anyone accessing the server via SSH is required to have a Linux account set up and is only allowed to access the server with RSA key encryption. accessing the server with only a username and password has been disabled.
+
+# Accessing the Server via Shell
+
+Using an SSH application of your preference, you will need to do the following to connect: 
+
+* Use ```54.95.11.13``` as the server address
+* Make sure you use port 2200 when accessing the server via SSH
+* You will need an RSA Key to access, please contact the administrator at chadbrooks80@gmail.com to receive. 
+
 
 # Applications Configured
 
