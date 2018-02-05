@@ -4,7 +4,7 @@ The item catalog provides a list of items within a variety of categories that ca
 
 # Accessing the website
 
-You are able to visit and utilize the site by going to ```http://54.95.11.13```
+You are able to visit and utilize the site by going to ```[http://54.95.11.13](http://54.95.11.13)```
 
 # Database Setup
 
